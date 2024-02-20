@@ -18,11 +18,11 @@ const SiderScreen = () => {
         },
         close: {
             x: "-100px",
-            opacity: 0,
+            opacity: 1,
             transition: {
                 ease: "easeIn",
                 dalay: 0.5,
-                duration: 0.5,
+                duration: 0.2,
             },
         },
     };
