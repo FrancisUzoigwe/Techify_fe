@@ -4,7 +4,7 @@ const Building = () => {
         <div className="w-full  justify-center items-center flex min-h-[calc(100vh-60px)]">
             <div className="w-[95%] h-full flex justify-between items-end max-lg:flex-col max-lg:items-center">
                 <div className="w-[550px]  max-lg:mt-5  h-[80%] max-lg:w-[80%] max-lg:text-center">
-                    <div className="text-5xl max-lg:mt-5 font-black max-md:text-[35px] leading-[60px] max-md:leading-[45px]"><span className="text-[orange] ">Building </span> Tomorrow's  Tech, Today's <span className="text-[orange]">Talent</span></div>
+                    <div className="text-5xl max-lg:mt-5 font-black max-md:text-[30px] leading-[60px] max-md:leading-[45px]"><span className="text-[orange] ">Building </span> Tomorrow's  Tech, Today's <span className="text-[orange]">Talent</span></div>
                     <div className="text-left mt-3 max-lg:text-center">
                         TechSynergy is a social edtech targeted at bridging the gap between early tech talents and businesses. Businesses get an option to invite early tech talents to work on projects based on their business problems.
                     </div>
