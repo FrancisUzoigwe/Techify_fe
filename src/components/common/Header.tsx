@@ -32,13 +32,13 @@ const Header = () => {
                                 <div className="flex items-center mr-2 font-[Buda] max-md:text-[15px] text-[20px]"><i className="mr-3"><LiaFreeCodeCamp className="text-5xl max-md:text-4xl" /></i>Techify</div>
                             </Link>
                             <div className="flex items-center ml-14 max-lg:hidden" >
-                                <div className=" mx-5 hover:cursor-pointer text-[15px] ">Our Mission</div>
-                                <div className=" mx-5 hover:cursor-pointer text-[15px]">Support</div>
+                                <div className=" mr-5 hover:cursor-pointer text-[15px] ">Our Mission</div>
+                                <div className="hover:cursor-pointer text-[15px]">Support</div>
                             </div>
                         </div>
                         <div className="flex items-center">
-                            <button className=" px-7 py-[7px] rounded-md bg-[orange] hover:bg-blue-400 text-white transition duration-500 max-md:text-[13px]">Login</button>
-                            <button className="ml-5 px-7 py-2 rounded-md bg-blue-400 text-white max-md:text-[13px]">Get Started</button>
+                            <button className=" px-7 py-2 max-md:px-5 rounded-md bg-[orange] hover:bg-blue-400 text-white transition duration-500 max-md:text-[13px]">Login</button>
+                            <button className="ml-5 px-7 py-2 max-md:px-5 rounded-md bg-blue-400 text-white max-md:text-[13px]">Get Started</button>
                             <div className="text-black hidden max-lg:block ml-4">
                                 <CgMenuRight className="text-3xl hover:cursor-pointer hover:scale-[1.2] transition-all duration-300" onClick={() => {
                                     dispatch(toggled())
@@ -56,13 +56,13 @@ const Header = () => {
                                 <div className="flex items-center mr-2 font-[Buda] max-md:text-[15px] text-[20px]"><i className="mr-3"><LiaFreeCodeCamp className="text-5xl max-md:text-4xl" /></i>Techify</div>
                             </Link>
                             <div className="flex items-center ml-14 max-lg:hidden">
-                                <div className="mx-5 hover:cursor-pointer text-[15px] ">Our Mission</div>
-                                <div className=" mx-5 hover:cursor-pointer text-[15px]">Support</div>
+                                <div className="mr-5 hover:cursor-pointer text-[15px] ">Our Mission</div>
+                                <div className="  hover:cursor-pointer text-[15px]">Support</div>
                             </div>
                         </div>
                         <div className="flex items-center">
-                            <button className=" px-7 py-[7px] rounded-md bg-[orange] hover:bg-blue-400 text-white transition-all duration-500 max-md:text-[13px]">Login</button>
-                            <button className="ml-5 px-7 py-2 rounded-md bg-blue-400 text-white max-md:text-[13px]">Get Started</button>
+                            <button className=" px-7 py-2 max-md:px-5 rounded-md bg-[orange] hover:bg-blue-400 text-white transition-all duration-500 max-md:text-[13px]">Login</button>
+                            <button className="ml-5 px-7 py-2  max-md:px-5 rounded-md bg-blue-400 text-white max-md:text-[13px]">Get Started</button>
                             <div className="text-black hidden max-lg:block ml-4">
                                 <CgMenuRight className="text-3xl hover:cursor-pointer hover:scale-[1.2] transition-all duration-300" onClick={() => {
                                     dispatch(toggled())
