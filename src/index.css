@@ -11,10 +11,17 @@
   font-family: Poppin;
 }
 
+@font-face {
+  font-family: Buda;
+  src: url(/font/Budaya-YzoBj.otf);
+}
+
+.Buda {
+  font-family: Buda;
+}
 
 :root {
-  font-family: Poppin;
+  font-family: Poppin, Buda;
   line-height: 1.5;
   font-weight: 400;
 }
-
