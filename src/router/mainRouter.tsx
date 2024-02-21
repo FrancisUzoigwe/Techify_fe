@@ -7,6 +7,7 @@ import LandingScreen from "../pages/auth/LandingScreen"
 import RegisterScreen from "../pages/auth/RegisterScreen"
 import SigninScreen from "../pages/auth/SigninScreen"
 import SupportScreen from "../pages/auth/SupportScreen"
+import Mission from "../pages/auth/Mission"
 
 export const mainRouter = createBrowserRouter([
     {
@@ -28,6 +29,10 @@ export const mainRouter = createBrowserRouter([
             {
                 path: "/support",
                 element: <SupportScreen />
+            },
+            {
+                path: "/mission",
+                element: <Mission />
             },
         ]
 

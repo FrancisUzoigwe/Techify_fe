@@ -3,6 +3,7 @@ import { changedToggle } from "../../global/globalState";
 import { motion } from "framer-motion";
 import { IoClose } from "react-icons/io5"
 import { LiaFreeCodeCamp } from "react-icons/lia";
+import { Link } from "react-router-dom";
 
 const SiderScreen = ({ }) => {
     const toggled = useSelector((state: any) => state.toggle);
@@ -34,7 +35,7 @@ const SiderScreen = ({ }) => {
             variants={motionVariant}
             initial="close"
             animate={toggled ? "open" : "close"}
-            className={`${toggled ? "w-[70%]" : "w-[0px]"} md:hidden bg-white  h-screen fixed z-[9999]`}
+            className={`${toggled ? "w-[70%]" : "w-[0px]"} xl:hidden bg-white  h-screen fixed z-[9999]`}
         >
             {toggled ? <div>
                 <div
@@ -44,25 +45,22 @@ const SiderScreen = ({ }) => {
                         dispatch(changedToggle());
                     }} />
                 </div>
-                <div className="ml-6">
-                    <button className="my-5 py-2 px-5 rounded-md bg-blue-400 text-white">
-                        For Support
-                    </button>
-                </div>
-                <div className="ml-6">
-                    <button className="my-5 py-2 px-5 rounded-md bg-blue-400 text-white">
-                        For Learning
-                    </button>
-                </div>
-                <div className="ml-6">
-                    <button className="my-5 py-2 px-5 rounded-md bg-[orange] hover:bg-blue-400 transition duration-300 text-white">
-                        Login
-                    </button>
-                </div>
-                <div className="ml-6">
-                    <button className="my-5 py-2 px-5 rounded-md bg-blue-400 text-white">
-                        Get Started
-                    </button>
+                <div className="ml-6 mt-10">
+                    <Link to="/mission">
+                        <div className="my-5 ">Our Mission</div>
+                    </Link>
+                    <Link to="/support">
+                        <div className="my-5 ">Support</div>
+                    </Link>
+                    <Link to="/signin">
+                        <div className="my-5 ">Learn</div>
+                    </Link>
+                    <Link to="/signin">
+                        <div className="my-5 ">Login</div>
+                    </Link>
+                    <Link to="register">
+                        <div className="my-5 ">Get Started</div>
+                    </Link>
                 </div>
             </div> : null}
             <div className="">
