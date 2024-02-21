@@ -1,4 +1,5 @@
-
+import me from "../../assets/me.jpg"
+import me1 from "../../assets/me1.jpg"
 const Building = () => {
     return (
         <div className="w-full  justify-center items-center flex min-h-[calc(100vh-60px)]">
@@ -18,8 +19,14 @@ const Building = () => {
                         </div>
                     </div>
                 </div>
-                <div className="w-[50%] bg-[red] max-lg:w-[85%] border max-lg:my-3 h-auto max-lg:h-full max-lg:mt-6 ml-4">
-                    <div className="h-[400px] bg-[green]  max-lg:h-[450px] w-full">Hello</div>
+                <div className="w-[50%]  max-lg:w-full max-lg:my-3 h-auto max-lg:h-full max-lg:mt-6 ml-4">
+                    <div className="h-[400px]  max-lg:h-[450px] w-full relative">
+                        <div className="grid grid-cols-2 gap-5 absolute inset-0">
+                            <img src={me} className="h-[250px] object-cover rounded-md col-span-1 row-span-1 bg-center" />
+                            <img src={me1} className="h-[250px]  object-cover bg-center bg-[black] rounded-md col-span-1 row-span-1 self-end " />
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
