@@ -1,8 +1,32 @@
+import { Fade } from "react-awesome-reveal"
 
 const SecondSection = () => {
-  return (
-    <div>SecondSection</div>
-  )
+    return (
+        <div className=" w-full min-h-[100vh] flex justify-center  items-center ">
+            <div className="w-[95%] h-auto flex justify-between max-lg:flex-col">
+                <Fade direction="up" triggerOnce={true}>
+                    <div className="h-[400px]  max-lg:w-[95%] border border-black w-[550px] max-xl:w-[450px] rounded-3xl relative">
+                        <div className="w-[200px] h-[200px] rounded-lg border border-black absolute -bottom-16 -right-5"></div>
+                    </div>
+                </Fade>
+                <div className="h-[500px] lg:ml-5 max-xl:my-10 max-lg:w-[95%]  w-[600px]  rounded-3xl max-md:mt-16">
+                    <div className="text-4xl max-md:text-2xl  font-black leading-[50px]">Shape the Future of Tech: <span className="text-[orange]">Mentor </span>the Next Generation of <span className="text-[orange]">Techies</span></div>
+
+                    <div className="my-3">
+                        Inspire and guide the next generation of developers by becoming a mentor on TechSynergy. Share your industry knowledge, help shape careers, and contribute to the growth of aspiring coders. Make a lasting impact—join us as a mentor today.
+                    </div>
+                    <div>
+                        <li className="my-2 text-[14px]">Passionate about tech</li>
+                        <li className="my-2 text-[14px]">Available to mentor for 1hr a week</li>
+                        <li className="my-2 text-[14px]">Keen on giving back</li>
+                    </div>
+                    <div className="mt-4">
+                        <button className="bg-blue-400 hover:bg-[orange] hover:cursor-pointer transition duration-300 py-3 px-5 rounded-md text-white">Get Started</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
 }
 
 export default SecondSection

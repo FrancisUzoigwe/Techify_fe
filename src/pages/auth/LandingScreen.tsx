@@ -7,7 +7,7 @@ const LandingScreen = () => {
 
     const dispatch = useDispatch()
     return (
-        <div className="w-full h-auto bg-[#F5F2EB]" onClick={() => {
+        <div className="w-full h-auto bg-[#F5F2EB] relative" onClick={() => {
             dispatch(changedToggle())
         }}>
             <Building />
