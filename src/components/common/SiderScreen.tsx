@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { IoClose } from "react-icons/io5"
 import { LiaFreeCodeCamp } from "react-icons/lia";
 
-const SiderScreen = () => {
+const SiderScreen = ({ }) => {
     const toggled = useSelector((state: any) => state.toggle);
     const dispatch = useDispatch();
 
@@ -39,14 +39,12 @@ const SiderScreen = () => {
             {toggled ? <div>
                 <div
                     className="w-full flex justify-end"
-
                 >
-                    <IoClose size={40} className="absolute top-2 right-2  text-3xl px-3 py-3 rounded-full bg-[#ebebeb] hover:cursor-pointer hover:scale-[1.1] transition duration-300 hover:shadow-sm" onClick={() => {
+                    <IoClose size={40} className="absolute top-2 right-2  text-3xl px-3 py-3 rounded-full bg-[#ebebeb] hover:cursor-pointer hover:scale-[1.1] transition duration-500 hover:shadow-sm hover:rotate-180" onClick={() => {
                         dispatch(changedToggle());
                     }} />
                 </div>
                 <div className="ml-6">
-                    <div className="flex items-center mr-2 font-[Buda] text-2xl"><i className="mr-[6px]"><LiaFreeCodeCamp className="text-5xl max-md:text-4xl" /></i>Techify</div>
                     <button className="my-5 py-2 px-5 rounded-md bg-blue-400 text-white">
                         For Support
                     </button>
