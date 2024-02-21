@@ -24,8 +24,8 @@ const Header = () => {
 
     return (
         <>
-            {scroll ? (<header className="w-full h-[80px] transition-all duration-500  flex items-center justify-center ">
-                <header className="w-full h-[80px] bg-white shadow-sm flex items-center justify-center fixed">
+            {scroll ? (<header className="w-full h-[60px] transition-all duration-500  flex items-center justify-center ">
+                <header className="w-full h-[60px] bg-white shadow-sm flex items-center justify-center fixed">
                     <header className="flex justify-between items-center w-[95%] h-full">
                         <div className="flex items-center">
                             <Link to="/">
@@ -49,7 +49,7 @@ const Header = () => {
                     </header>
                 </header>
             </header>) : (<header className="w-full h-[60px] transition-all duration-100  bg-black flex items-center justify-center">
-                <header className="w-full h-[60px] bg-white shadow-sm  flex items-center justify-center fixed">
+                <header className="w-full h-[60px] bg-[#F5F2EB] shadow-sm  flex items-center justify-center fixed">
                     <header className="flex justify-between items-center w-[95%] h-full">
                         <div className="flex items-center">
                             <Link to="/">

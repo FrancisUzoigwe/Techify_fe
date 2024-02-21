@@ -1,5 +1,6 @@
-import me from "../../assets/me.jpg"
-import me1 from "../../assets/me1.jpg"
+import me from "../../assets/girl.jpg"
+import me1 from "../../assets/first-man.jpg"
+import { FaLongArrowAltRight } from "react-icons/fa"
 const Building = () => {
     return (
         <div className="w-full  justify-center items-center flex min-h-[calc(100vh-60px)]">
@@ -14,8 +15,8 @@ const Building = () => {
                     </div>
                     <div className="w-full h-auto py-2 mt-2 flex justify-start items-center max-lg:justify-center">
                         <div className="flex items-center">
-                            <button className="mr-3 px-4 py-2 rounded-md bg-[orange] hover:bg-blue-400 transition duration-300 text-white ">For Support</button>
-                            <button className="rounded-md px-4 py-2 bg-blue-400 text-white">For Learning</button>
+                            <button className="mr-3 px-4 py-2 rounded-md  flex items-center bg-[orange] hover:bg-blue-400 transition duration-300 text-white ">For Support  <FaLongArrowAltRight className="ml-[10px]" /></button>
+                            <button className="rounded-md flex items-center  px-4 py-2 bg-blue-400 text-white">For Learning <FaLongArrowAltRight className="ml-[10px]" /></button>
                         </div>
                     </div>
                 </div>
