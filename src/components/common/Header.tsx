@@ -61,7 +61,7 @@ const Header = () => {
                             </div>
                         </div>
                         <div className="flex items-center">
-                            <button className=" px-7 py-2 max-md:px-5 rounded-md bg-[orange] hover:bg-blue-400 text-white transition-all duration-500 max-md:text-[13px]">Login</button>
+                            <button className=" px-7 py-2 max-md:pr-5 rounded-md bg-[orange] hover:bg-blue-400 text-white transition-all duration-500 max-md:text-[13px]">Login</button>
                             <button className="ml-5 px-7 py-2  max-md:px-5 rounded-md bg-blue-400 text-white max-md:text-[13px]">Get Started</button>
                             <div className="text-black hidden max-lg:block ml-2">
                                 <CgMenuRight className="text-3xl hover:cursor-pointer hover:scale-[1.2] transition-all duration-300" onClick={() => {
