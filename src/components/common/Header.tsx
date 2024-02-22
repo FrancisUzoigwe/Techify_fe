@@ -32,13 +32,21 @@ const Header = () => {
                                 <div className="flex items-center mr-2 font-[Buda] max-md:text-[15px] text-[20px]"><i className="mr-[6px]"><LiaFreeCodeCamp className="text-5xl max-md:text-4xl" /></i>Techify</div>
                             </Link>
                             <div className="flex items-center ml-14 max-lg:hidden" >
-                                <div className=" mr-5 hover:cursor-pointer text-[15px] ">Our Mission</div>
-                                <div className="hover:cursor-pointer text-[15px]">Support</div>
+                                <Link to="/mission">
+                                    <div className=" mr-5 hover:cursor-pointer text-[15px] ">Our Mission</div>
+                                </Link>
+                                <Link to="/support">
+                                    <div className="hover:cursor-pointer text-[15px]">Support</div>
+                                </Link>
                             </div>
                         </div>
                         <div className="flex items-center">
-                            <button className=" px-7 py-2 max-md:px-5 rounded-md bg-[orange] hover:bg-blue-400 text-white transition duration-500 max-md:text-[13px]">Login</button>
-                            <button className="ml-5 px-7 py-2 max-md:px-5 rounded-md bg-blue-400 text-white max-md:text-[13px]">Get Started</button>
+                            <Link to="/signin">
+                                <button className=" px-7 py-2 max-md:px-5 rounded-md bg-[orange] hover:bg-blue-400 text-white transition duration-500 max-md:text-[13px]">Login</button>
+                            </Link>
+                            <Link to="/register">
+                                <button className="ml-5 px-7 py-2 max-md:px-5 rounded-md bg-blue-400 text-white max-md:text-[13px]">Get Started</button>
+                            </Link>
                             <div className="text-black hidden max-lg:block ml-2">
                                 <CgMenuRight className="text-3xl hover:cursor-pointer hover:scale-[1.2] transition-all duration-300" onClick={() => {
                                     dispatch(toggled())
@@ -56,13 +64,21 @@ const Header = () => {
                                 <div className="flex items-center mr-2 font-[Buda] max-md:text-[15px] text-[20px]"><i className="mr-[6px]"><LiaFreeCodeCamp className="text-5xl max-md:text-4xl" /></i>Techify</div>
                             </Link>
                             <div className="flex items-center ml-14 max-lg:hidden">
-                                <div className="mr-5 hover:cursor-pointer text-[15px] ">Our Mission</div>
-                                <div className="  hover:cursor-pointer text-[15px]">Support</div>
+                                <Link to="/mission">
+                                    <div className="mr-5 hover:cursor-pointer text-[15px] ">Our Mission</div>
+                                </Link>
+                                <Link to="/support">
+                                    <div className="  hover:cursor-pointer text-[15px]">Support</div>
+                                </Link>
                             </div>
                         </div>
                         <div className="flex items-center">
-                            <button className=" px-7 py-2 max-md:px-5 rounded-md bg-[orange] hover:bg-blue-400 text-white transition-all duration-500 max-md:text-[13px]">Login</button>
-                            <button className="ml-5 px-7 py-2  max-md:px-5 rounded-md bg-blue-400 text-white max-md:text-[13px]">Get Started</button>
+                            <Link to="/signin">
+                                <button className=" px-7 py-2 max-md:px-5 rounded-md bg-[orange] hover:bg-blue-400 text-white transition-all duration-500 max-md:text-[13px]">Login</button>
+                            </Link>
+                            <Link to="/register">
+                                <button className="ml-5 px-7 py-2  max-md:px-5 rounded-md bg-blue-400 text-white max-md:text-[13px]">Get Started</button>
+                            </Link>
                             <div className="text-black hidden max-lg:block ml-2">
                                 <CgMenuRight className="text-3xl hover:cursor-pointer hover:scale-[1.2] transition-all duration-300" onClick={() => {
                                     dispatch(toggled())

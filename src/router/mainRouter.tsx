@@ -1,6 +1,3 @@
-
-
-
 import { createBrowserRouter } from "react-router-dom"
 import AuthLayout from "../components/layout/AuthLayout"
 import LandingScreen from "../pages/auth/LandingScreen"
@@ -8,6 +5,10 @@ import RegisterScreen from "../pages/auth/RegisterScreen"
 import SigninScreen from "../pages/auth/SigninScreen"
 import SupportScreen from "../pages/auth/SupportScreen"
 import Mission from "../pages/auth/Mission"
+import MainLayout from "../components/layout/MainLayout"
+import HomeScreen from "../pages/home/HomeScreen"
+import BlogScreen from "../pages/home/BlogScreen"
+import DetailScreen from "../pages/home/DetailScreen"
 
 export const mainRouter = createBrowserRouter([
     {
@@ -19,14 +20,6 @@ export const mainRouter = createBrowserRouter([
                 element: <LandingScreen />
             },
             {
-                path: "/register",
-                element: <RegisterScreen />
-            },
-            {
-                path: "/signin",
-                element: <SigninScreen />
-            },
-            {
                 path: "/support",
                 element: <SupportScreen />
             },
@@ -36,5 +29,32 @@ export const mainRouter = createBrowserRouter([
             },
         ]
 
+    },
+    {
+        path: "/register",
+        element: <RegisterScreen />
+    },
+    {
+        path: "/signin",
+        element: <SigninScreen />
+
+    },
+    {
+        path: "/auth",
+        element: <MainLayout />,
+        children: [
+            {
+                index: true,
+                element: <HomeScreen />,
+            },
+            {
+                path: "/auth/blogs",
+                element: <BlogScreen />
+            },
+            {
+                path: "/auth/blogs/:blogID",
+                element: <DetailScreen />
+            },
+        ]
     }
 ])

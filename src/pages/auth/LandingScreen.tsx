@@ -2,6 +2,7 @@ import { useDispatch } from "react-redux"
 import { changedToggle } from "../../global/globalState"
 import Building from "../../components/Reusesable/Building"
 import SecondSection from "../../components/Reusesable/SecondSection"
+import ThirdSection from "../../components/Reusesable/ThirdSection"
 
 const LandingScreen = () => {
 
@@ -12,6 +13,7 @@ const LandingScreen = () => {
         }}>
             <Building />
             <SecondSection />
+            <ThirdSection />
         </div>
     )
 }
