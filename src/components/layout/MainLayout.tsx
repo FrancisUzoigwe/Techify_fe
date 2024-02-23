@@ -7,7 +7,7 @@ const MainLayout = () => {
     return (
         <div>
             <MainHeader />
-            <div className="flex">
+            <div className="flex ">
                 <MainSideScreen />
                 <Outlet />
             </div>

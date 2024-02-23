@@ -9,33 +9,17 @@ const SiderScreen = ({ }) => {
     const toggled = useSelector((state: any) => state.toggle);
     const dispatch = useDispatch();
 
-    const motionVariant = {
-        open: {
-            x: 0,
-            opacity: 1,
-            transition: {
-                ease: "easeOut",
-                dalay: 0.5,
-                duration: 0.5,
-            },
-        },
-        close: {
-            x: "-300px",
-            opacity: 1,
-            transition: {
-                ease: "easeIn",
-                dalay: 0.5,
-                duration: 0.2,
-            },
-        },
+    const variants = {
+        open: { width: 0 },
+        closed: { width: 0, },
     };
 
     return (
         <motion.div
-            variants={motionVariant}
-            initial="close"
-            animate={toggled ? "open" : "close"}
-            className={`${toggled ? "w-[70%]" : "w-[0px]"} xl:hidden bg-white  h-screen fixed z-[9999]`}
+            variants={variants}
+            initial={false}
+            animate={!toggled ? "open" : "close"}
+            className={`${toggled ? "w-[0px]" : "w-[0px]"} xl:hidden bg-white  h-screen fixed z-[9999]`}
         >
             {toggled ? <div>
                 <div

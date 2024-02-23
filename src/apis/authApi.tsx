@@ -2,7 +2,8 @@
 
 import axios from "axios"
 
-const url: string = "http://localhost:2345"
+// const url: string = "http://localhost:2345"
+const url: string = "https://techify-be.onrender.com"
 
 export const registerApi = async (data: any) => {
     try {
@@ -15,9 +16,9 @@ export const registerApi = async (data: any) => {
 }
 
 
-export const verifyApi = async (userID: any, token: string) => {
+export const verifyApi = async (userID: any) => {
     try {
-        return await axios.patch(`${url}/api/${userID}/${token}/verify-account`).then((res) => {
+        return await axios.patch(`${url}/api/${userID}/verify-account`).then((res) => {
             return res.data?.data
         })
     } catch (error: any) {

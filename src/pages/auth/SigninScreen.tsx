@@ -4,14 +4,12 @@ import { Link, useNavigate, useParams } from "react-router-dom";
 import * as yup from "yup";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { jwtDecode } from "jwt-decode";
 import { signinApi, verifyApi } from "../../apis/authApi";
 import { useDispatch } from "react-redux";
 import { mainUser } from "../../global/globalState";
 
 
 const SigninScreen = () => {
-  // const [token, setToken] = useState<string>("");
   const navigate = useNavigate();
   const { token }: any = useParams()
   const motionVariant = {
@@ -38,26 +36,17 @@ const SigninScreen = () => {
   const onHandleSubmit = handleSubmit(async (data: any) => {
     const { email, password } = data;
     signinApi({ email, password }).then((res) => {
-      console.log("This is res:", res);
       dispatch(mainUser(res))
+      console.log("This is res:", res);
       navigate("/auth");
     });
   });
 
   useEffect(() => {
     if (token) {
-      const decodedToken: any = jwtDecode(token);
-      const userID: string = decodedToken.userID;
-      verifyApi(userID, token)
-        .then((data) => {
-          console.log("Verification successful:", data);
-          navigate("/auth");
-        })
-        .catch((error) => {
-          console.error("Verification failed:", error);
-        });
+      verifyApi(token!)
     }
-  }, []);
+  }, [])
 
   return (
     <div className="w-full  flex justify-center h-screen items-center bg-[#F5F2EB]">
