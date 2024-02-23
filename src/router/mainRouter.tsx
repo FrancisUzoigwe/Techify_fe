@@ -9,6 +9,8 @@ import MainLayout from "../components/layout/MainLayout"
 import HomeScreen from "../pages/home/HomeScreen"
 import BlogScreen from "../pages/home/BlogScreen"
 import DetailScreen from "../pages/home/DetailScreen"
+import EmailScreen from "../pages/auth/EmailScreen"
+import PrivateRoute from "./PrivateRoute"
 
 export const mainRouter = createBrowserRouter([
     {
@@ -40,8 +42,20 @@ export const mainRouter = createBrowserRouter([
 
     },
     {
+        path: "/email",
+        element: <EmailScreen />
+
+    },
+    {
+        path: "/api/:userID/:token/verify-account",
+        element: <SigninScreen />
+
+    },
+    {
         path: "/auth",
-        element: <MainLayout />,
+        element: <PrivateRoute>
+            <MainLayout />,
+        </PrivateRoute>,
         children: [
             {
                 index: true,

@@ -1,7 +1,8 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
-    toggle: false
+    toggle: false,
+    user: {} || null
 }
 
 const globalState = createSlice({
@@ -13,10 +14,16 @@ const globalState = createSlice({
         },
         changedToggle: (state: any) => {
             state.toggle = false
+        },
+        mainUser: (state: any, { payload }) => {
+            state.user = payload
+        },
+        logOut: (state: any) => {
+            state.user = null
         }
     }
 });
 
-export const { changedToggle, toggled } = globalState.actions
+export const { changedToggle, toggled, mainUser, logOut } = globalState.actions
 
 export default globalState.reducer

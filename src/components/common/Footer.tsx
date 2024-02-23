@@ -1,8 +1,7 @@
-import React from 'react';
 
-const Footer: React.FC = () => {
+const Footer = () => {
     return (
-        <footer className="bg-gray-800 text-white py-12 relative">
+        <footer className="bg-[black] text-white py-12 relative">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
                     <div>
@@ -11,6 +10,7 @@ const Footer: React.FC = () => {
                     </div>
                     <div>
                         <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
+                        <h4>Head Office:</h4>
                         <p className="text-sm">Ajeromi-Ifelodun Counsel, Lagos State, Nigeria</p>
                         <p className="text-sm">kossyuzoigwe@gmail.com</p>
                         <p className="text-sm">+2347047474886</p>
