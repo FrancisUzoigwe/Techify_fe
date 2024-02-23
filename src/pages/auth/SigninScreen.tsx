@@ -101,7 +101,7 @@ const SigninScreen = () => {
         </div>
         <div className="w-[85%] my-2 flex items-center justify-end text-[15px]">Don't have an account?
           <Link to="/register">
-            <span className="ml-2 text-red-400">Signup</span>
+            <span className="ml-2 text-red-400">Signin</span>
           </Link></div>
         <button className="w-[85%] py-3 my-3 rounded-md bg-blue-400 text-white">Signup</button>
       </motion.form>
