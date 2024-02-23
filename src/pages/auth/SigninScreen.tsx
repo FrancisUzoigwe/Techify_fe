@@ -37,8 +37,9 @@ const SigninScreen = () => {
     const { email, password } = data;
     signinApi({ email, password }).then((res) => {
       dispatch(mainUser(res))
-      console.log("This is res:", res);
       navigate("/auth");
+      console.log("This is res:", res);
+
     });
   });
 

@@ -10,7 +10,7 @@ const SiderScreen = ({ }) => {
     const dispatch = useDispatch();
 
     const variants = {
-        open: { width: 0 },
+        open: { width: 250 },
         closed: { width: 0, },
     };
 
@@ -18,8 +18,8 @@ const SiderScreen = ({ }) => {
         <motion.div
             variants={variants}
             initial={false}
-            animate={!toggled ? "open" : "close"}
-            className={`${toggled ? "w-[0px]" : "w-[0px]"} xl:hidden bg-white  h-screen fixed z-[9999]`}
+            animate={toggled ? "open" : "close"}
+            className={`${toggled ? "w-[0]" : "w-[0px]"} block xl:hidden bg-white  h-screen fixed z-[9999]`}
         >
             {toggled ? <div>
                 <div

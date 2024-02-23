@@ -8,7 +8,7 @@ const url: string = "https://techify-be.onrender.com"
 export const registerApi = async (data: any) => {
     try {
         return await axios.post(`${url}/api/register`, data).then((res) => {
-            return res.data
+            return res.data?.data
         })
     } catch (error: any) {
         console.log(error?.message)

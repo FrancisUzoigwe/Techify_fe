@@ -19,7 +19,6 @@ const App = () => {
         console.log(typeof error);
       });
   });
-
   return (
     <div>
 
