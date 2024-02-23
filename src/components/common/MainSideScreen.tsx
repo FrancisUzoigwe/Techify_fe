@@ -33,9 +33,9 @@ const MainSideScreen = () => {
           }} />
         </div>
         <div className="ml-2  mt-16">
-          <div className="relative h-[40px] flex items-center">
+          <div className="relative h-[40px] w-[170px] flex items-center">
             <div className="absolute pl-2 "><CiSearch className="text-2xl" /></div>
-            <input type="text" placeholder="Search Topics..." className="h-full rounded-full border outline-none pl-8 text-[15px]" />
+            <input type="text" placeholder="Search Topics..." className="h-full rounded-full w-full border outline-none pl-8 text-[15px]" />
           </div>
         </div>
         <div className="ml-6 mt-5">
